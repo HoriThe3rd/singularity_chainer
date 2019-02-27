@@ -1,0 +1,14 @@
+# Chainer container for singularity
+
+Bootstrap: docker
+From: chainer/chainer:latest-python3
+
+%post
+    apt update
+    apt install -y libpng-dev python3-tk
+    export LC_ALL=C
+    pip3 install matplotlib pandas scipy scikit-learn tqdm opencv-python
+
+%label
+    Author horithe3rd
+    Version v1.0.1
