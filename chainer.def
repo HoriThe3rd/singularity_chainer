@@ -11,4 +11,4 @@ From: chainer/chainer:latest-python3
 
 %label
     Author horithe3rd
-    Version v1.0.1
+    Version v1.0.2
