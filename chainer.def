@@ -5,7 +5,7 @@ From: chainer/chainer:latest-python3
 
 %post
     apt update
-    apt install -y libpng-dev python3-tk
+    apt install -y libpng-dev libjpeg-dev libtiff-dev python3-tk libglib2.0-0 libsm6
     export LC_ALL=C
     pip3 install matplotlib pandas scipy scikit-learn tqdm opencv-python
 
