@@ -9,6 +9,7 @@ The building environment is included this repository. So, you can build it quick
 ## Container specifications
 - OS: Ubuntu 16.04.5 LTS
 - Python version: 3.5.2
+- OpenCV is available
 
 Installed python packages are below:
 ```sh
