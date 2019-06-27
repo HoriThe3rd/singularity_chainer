@@ -61,6 +61,7 @@ Vagrant.configure("2") do |config|
   # information on available options.
   config.vm.provider "virtualbox" do |v|
     v.cpus = 4
+    config.disksize.size = '50GB'
   end
 
   # Enable provisioning with a shell script. Additional provisioners such as
