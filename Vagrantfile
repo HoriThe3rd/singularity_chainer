@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "sylabs/singularity-3.0-ubuntu-bionic64"
+  config.disksize.size = '50GB'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -61,7 +62,6 @@ Vagrant.configure("2") do |config|
   # information on available options.
   config.vm.provider "virtualbox" do |v|
     v.cpus = 4
-    config.disksize.size = '50GB'
   end
 
   # Enable provisioning with a shell script. Additional provisioners such as

@@ -23,10 +23,17 @@ Singularity chainer.sif:~/development> pip3 freeze
 ### Requirements
 - Singularity v3.0.3
 - Vagrant 2.2.3
+- vagrant-disksize plugin
 
 Your computer also have to be installed VirtualBox. It is a requirement for the Vagrant.
 
 ### Procedure
+If your vagrant doesn't have vagrant-disksize plugin, please install it.
+
+```shell
+vagrant plugin install vagrant-disksize
+```
+
 To build the container, you run the commands as shown below.
 
 Note: All commands have to be executed in top directory of this repository.
